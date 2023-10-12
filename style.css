@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container1 {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/background.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+}
+
+.navbar {
+    height: 12%;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    cursor: pointer;
+}
+
+.menu-icon {
+    width: 30px;
+    cursor: pointer;
+    margin-left: 40px;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+}
+
+.row {
+    display: flex;
+    height: 77%;
+    align-items: center;
+}
+
+.col {
+    flex-basis: 50%;
+    padding: 60px;
+}
+
+h1 {
+    color: #fff;
+    font-size: 100px;
+}
+
+p {
+    color: #fff;
+    font-size: 11px;
+    line-height: 15px;
+}
+
+button {
+    width: 180px;
+    color: #000;
+    font-size: 12px;
+    padding: 12px 0;
+    background: #fff;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+}
+
+.card {
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+
+.card1 {
+    background-image: linear-gradient(rgba(38, 37, 37, 0.7), rgba(38, 37, 37, 0.7)),
+        url(images/pic1.jpg);
+}
+
+.card2 {
+    background-image: linear-gradient(rgba(38, 37, 37, 0.7), rgba(38, 37, 37, 0.7)),
+        url(images/pic2.jpg);
+}
+
+.card3 {
+    background-image: linear-gradient(rgba(38, 37, 37, 0.7), rgba(38, 37, 37, 0.7)),
+        url(images/pic3.jpg);
+}
+
+.card4 {
+    background-image: linear-gradient(rgba(38, 37, 37, 0.7), rgba(38, 37, 37, 0.7)),
+        url(images/pic4.jpg);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+h5 {
+    color: #fff;
+    font-size: 20px;
+    padding-bottom: 6px;
+    padding-top: 10PX;
+}
+
+.card p {
+    font-size: 10px;
+}
+
+.about-section {
+    background: url(images/pic4.jpg) no-repeat left;
+    background-size: 60%;
+    background-color: #fff;
+    overflow: hidden;
+    padding: 100px;
+    margin: 50px;
+}
+
+.inner-container {
+    width: 55%;
+    float: right;
+    background-color: #fdfdfd;
+    padding: 80px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+.inner-container h1 {
+    margin-bottom: 30px;
+    color: #000;
+    font-size: 70px;
+}
+
+.text {
+    font-size: 13px;
+    color: #545454;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+
+.skills {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.container2 {
+    width: 100%;
+    height: 100vh;
+    background-color: lightgrey;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+}
+
+h2 {
+    color: #000;
+    font-size: 80px;
+}
+
+.container2 .col p {
+    color: #000;
+}
+
+.cardimg {
+    margin-top: 80px;
+    margin-left: 5px;
+    margin-right: 5px;
+    position: relative;
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
+    padding: 30px 50px;
+    background-color: #fff;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.cardimg:hover {
+    height: 350px;
+
+}
+
+.imgbox {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-80px);
+    z-index: 99;
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+.content {
+    padding: 10px 20px;
+    text-align: center;
+    transform: translateY(-450px);
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.cardimg:hover>.content {
+    opacity: 1;
+    transform: translateY(-200px);
+}
+
+.content h2 {
+    color: #000;
+    font-size: 25px;
+    padding-top: -23px;
+}
